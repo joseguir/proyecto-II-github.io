@@ -82,6 +82,7 @@ body {
 .nav__img {
     display: block;
     width: 30px;
+    
 }
 
 
@@ -487,7 +488,17 @@ body {
 @media (max-width:800px){
     .nav__menu{
         display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        
     }
+
+    .nav__menu:hover {
+       background-color: #2091F9;
+    }
+
+
 
     .nav__link--menu{
         position: fixed;
