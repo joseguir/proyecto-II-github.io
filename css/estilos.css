@@ -61,12 +61,34 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
+    align-items: center;
     gap: 2em;
 }
 
 .nav__items {
     list-style: none;
 }
+
+.campus__items {
+    background-color: #2091F9;
+    padding: .75em 1em;
+    border-radius: 5px;
+
+}
+
+.campus__items:hover {
+    background-color: white;
+}
+
+.campus__items a {
+    text-decoration: none;
+    color: white;
+}
+
+.campus__items a:hover {
+   color: #2091F9;
+}
+
 
 .nav__links {
     color: #fff;

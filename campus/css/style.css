@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --gris: #e8e8e8;
+    --azul: #2091F9;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-dancing: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-roboto);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.campus {
+    background-color: var(--gris);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 80%;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 1.45em;
+    color: #33c47e;
+    padding: 25px 0;
+}
+
+.row-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.row-login .left-login {
+   background-color: #2091F9;
+   height: 25em;
+   width: 90%;
+   border-radius: 10px;
+   background-image: url(../img/estudiante.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1em;
+   overflow: hidden;
+   position: relative;
+}
+
+.row-login .left-login::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(0,0,0, .6);
+}
+
+.row-login .left-login h3 {
+    color: white;
+    font-family: var(--font-dancing);
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+    z-index: 10;
+}
+
+.row-login .right-login {
+    background-color: var(--azul);
+    border-radius: 10px;
+    color: white;
+    width: 90%;
+    min-height: 20em;
+}
+
+.row-login .right-login form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.row-login .right-login form h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.row-login .right-login form label {
+   display: block;
+   padding: 10px 0;
+   font-size: 1em;
+}
+
+.row-login .right-login form input {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+}
+
+.row-login .right-login form button {
+    background-color: #33c47e;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    letter-spacing: .07rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.row-login .right-login form button:hover {
+    background-color: white;
+    border: 2px solid #33c47e;
+    color: #33c47e;
+}
+
+/*       Media Queries    */
+
+@media only screen and (min-width:  768px) {
+   .login {
+    max-width: 1000px;
+   }
+
+   .row-login {
+     flex-direction: row;
+   }
+
+   .row-login .left-login {
+      height: 22em;
+      max-width: 500px;
+   }
+
+   .row-login .right-login {
+    height: 22em;
+    max-width: 350px;
+   }
+
+}
+
+
+
