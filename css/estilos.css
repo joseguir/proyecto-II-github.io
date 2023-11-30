@@ -509,6 +509,9 @@ body {
 @media (max-width:800px){
     .nav__menu{
         display: block;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
     }
 
     .nav__link--menu{
